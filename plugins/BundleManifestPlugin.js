@@ -60,7 +60,7 @@ module.exports = function (bundler) {
     const dir = bundler.options.outDir;
     const publicURL = bundler.options.publicURL;
 
-    const manifestPath = path.resolve(dir, 'parcel-manifest.json');
+    const manifestPath = path.resolve(dir, 'manifest.json');
     const manifestValue = {}
 
     console.info('📦 PackageManifestPlugin');
