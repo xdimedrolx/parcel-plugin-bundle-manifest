@@ -64,7 +64,7 @@ module.exports = function (bundler) {
     const manifestValue = {}
 
     console.info('📦 PackageManifestPlugin');
-    feedManifestValue(bundle, manifestValue, publicURL);
+    feedManifestValue(bundle, manifestValue, '/');
     console.info(`📄 manifest : ${manifestPath}`);
 
     const oldManifestValue = readManifestJson(manifestPath);
